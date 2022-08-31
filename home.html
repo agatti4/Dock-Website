@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+    Anthony Gatti and Mike Foley
+    Web Development Spring 2022
+    File: home.html
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Z Docking Solutions LLC - Home</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/globalEffects.css">
+    
+</head>
+<body>
+
+   <script>
+      /*Used to cycle through images of docks*/
+      function start() {
+            var rotator = document.getElementById('slide');  
+            var imageDir = 'images/';                          
+            var delayInSeconds = 2;                            
+        
+            var images = ['dock1.jpg', 'dock2.jpeg', 'dock3.jpg', 'dock4.jpeg', 'dock5.jpg', 'dock6.jpg', 'dock7.jpeg'];
+        
+            var num = 0;
+            var changeImage = function() {
+                var len = images.length;
+                rotator.src = imageDir + images[num++];
+                if (num == len) {
+                    num = 0;
+                }
+            };
+      setInterval(changeImage, delayInSeconds * 1000);
+      }
+      window.onload=function(){
+         start();
+      };
+      
+      /*Used as an onClick for the warranty button*/
+      function onClick () {
+          alert("E-Z Docking Solutions LLC warranties all E-Z Docking Solutions brand docks purchased new by the original owner to be free from defects in the aluminum structure and welds for a period of 15 years. E-Z Docking Solutions LLC will at its option, repair or replace, without charge, or allow credit for any such goods found on examination by E-Z Docking Solutions to be defective under normal use and service, provided E-Z Docking Solutions is promptly notified in writing upon discovery of such defects. The buyers remedies with respect to defective goods shall be exclusively limited as provided above, and in no event shall E-Z Docking Solutions be liable for incidental or consequential damages of any nature. All repair work must be done by E-Z Docking Solutions. This warranty does not cover damage caused by improper use, installation, removal, overloading accident, neglect or harmful alterations or repairs made by others, damage by snow or ice, fallen trees, boat collisions, electrolysis, severe weather conditions, acts of war, and all acts of God.");
+      }
+   </script>
+   
+   <nav>
+      <div id="padding">
+      <div id="topHeaderInfo">
+               <h2 id="compName">
+                  E-Z Docking Solutions
+               </h2>
+               
+               <h2 id="phone">
+                  Call Us: (603) 942-7355﻿﻿
+               </h2>
+      </div>
+      <div id="navDivBox">
+         <div class="navBar">
+            <a href="home.html" style="background-color: #111111">Home</a>
+         </div>
+         <div class="navBar">
+            <a href="dockPack.html">Dock Packages and Pricing</a>
+         </div>
+         <div class="navBar">
+            <a href="sure-step.html">Sure-Step</a>
+         </div>
+         <div class="navBar">
+            <a href="dockParts.html">Dock Parts and Accessories</a>
+         </div>
+         <div class="navBar" onclick="onClick()" id="warranty">
+            Warranty
+         </div>
+         <div class="navBar">
+            <a href="testAndFeed.html">Testimonials and Feedback</a>
+         </div>
+         <div class="navBar">
+            <a href="contactUs.html">Contact Us</a>
+         </div>
+      </div>
+      </div>
+   </nav>
+   <div id="vGap">
+      
+   </div>
+   <header id="head">
+      <h1>Welcome to E-Z Docking Solutions! - Check out our NEW Kayak Launch Dock!</h1>
+      <div id="animation">
+         <img src="images/animation/oceanBackround.jpg" alt="noimage" id="bg">
+         <img src="images/animation/dock.png" alt="noimage" id="dock">
+      </div>
+   </header>
+
+   <aside id="about">
+      <table>
+        <tr>
+            <td>
+               <h2>About Our Docks:</h2>
+               <p class="columns">Designed by craftsman with over 30 years experience in the welding and fabrication business;
+               these docks are rugged, dependable, and the best value for your dollar!
+               <br>
+               Since our docks are all manufactured right here, they are fully customizable to accommodate
+               all of your docking needs. We can easily build custom sizes and configurations without charging
+               you premium prices. We design and build our docks to last your lifetime!</p>
+            </td>
+            <td style="padding-left: 20px">
+               
+               <h2 class="center"><b>Premium Features:</b></h2>
+               <ul>
+                  <li><p>Fully welded using marine grade T-6061 extruded aluminum</p></li>
+                  <li><p>Feature Sure-step decking, making them lightweight, non-slip, heat resistant, and friendly on the feet</p></li>
+                  <li><p>Environmentally friendly</p></li>
+                  <li><p>15 year warranty</p></li>
+                  <li><p>E-Z installation and removal</p></li>
+                  <li><p>FREE onsite evaluations</p></li>
+               </ul>
+            </td>
+        </tr>
+      </table>
+   </aside>
+   
+   <aside id="images">
+      <table>
+         <tr>
+            <td>
+                  <div class="demo">
+                     <div class="perspective-container">
+                        <div class="card">
+                           <img src="images/dock1.jpg" id="slide" alt="dock images" width="433" height="243" class="marginauto"/>
+                        </div>
+                     </div>
+                  </div>
+            </td>
+         </tr>
+      </table>
+
+   </aside>
+   
+   <aside id="pricing">
+      <table>
+         <tr>
+            <td>
+               <h2>Pricing:</h2>
+               <p class="columns">Dock installation service is $100 per section. Dock removal service is also $100 per section.
+               We ARE doing NEW dock installations but our subcontractors are handling fall removals and spring re-installs.
+               Our repeat customer base has just grown too large to accommodate all customers in a timely fashion! Please
+               contact Adam Worster at AT Worster Enterprises directly to schedule these! (603) 793-1351
+               <br>We also offer custom welding and fabrication services which can be priced by giving us a call or stopping by.</p>
+            </td>
+         </tr>
+      </table>
+      
+      
+   </aside>
+
+   <footer>
+      <table>
+         <tr>
+            <td style="text-align: center; width: 33.33%; padding: 20px">
+               <p>Stop By Or Call Us Today!</p>
+                  <p>E-Z Docking Solutions LLC is a family owned and operated company founded on the principles of integrity, quality, and fair pricing. Our goal is to build you the best quality product to meet your unique needs without breaking the bank. We have over 4,000 happy customers all throughout New England.</p>
+                  <p>Please contact us anytime! We look forward to hearing from you.</p>
+            </td>
+            <td style="text-align: center; width: 33.33%">
+               <p>DISCLAIMER: We are not affiliated with </p>
+               <p><img src="images/ezlogo.jpg" alt="logo"></p>
+               <p>Manufacturer of Plastic Floating Docks.</p>
+            </td>
+            <td style="text-align: center; width: 33.33%">
+               <p>E-Z DOCKING SOLUTIONS LLC</p>
+                  <p>1548 FIRST NH TURNPIKE</p>  
+                  <p>NORTHWOOD, NH 03261</p>
+                  <p>PH: (603) 942-7355</p>
+                  <p>EMAIL: ezdocking@yahoo.com</p>
+            </td>
+         </tr>
+      </table>
+   
+   </footer>
+</body>
+</html>

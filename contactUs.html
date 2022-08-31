@@ -1,0 +1,116 @@
+<!--
+    Anthony Gatti and Mike Foley
+    Web Development Spring 2022
+    File: contactUs.html
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Z Docking Solutions LLC - Contact Us</title>
+    <link rel="stylesheet" href="CSS/contactUs.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/globalEffects.css">   
+</head>
+<body>
+    <script>
+        function onClick () {
+          alert("E-Z Docking Solutions LLC warranties all E-Z Docking Solutions brand docks purchased new by the original owner to be free from defects in the aluminum structure and welds for a period of 15 years. E-Z Docking Solutions LLC will at its option, repair or replace, without charge, or allow credit for any such goods found on examination by E-Z Docking Solutions to be defective under normal use and service, provided E-Z Docking Solutions is promptly notified in writing upon discovery of such defects. The buyers remedies with respect to defective goods shall be exclusively limited as provided above, and in no event shall E-Z Docking Solutions be liable for incidental or consequential damages of any nature. All repair work must be done by E-Z Docking Solutions. This warranty does not cover damage caused by improper use, installation, removal, overloading accident, neglect or harmful alterations or repairs made by others, damage by snow or ice, fallen trees, boat collisions, electrolysis, severe weather conditions, acts of war, and all acts of God.");
+        }
+    </script>
+    <nav>
+      <div id="padding">
+      <div id="topHeaderInfo">
+               <h2 id="compName">
+                  E-Z Docking Solutions
+               </h2>
+               
+               <h2 id="phone">
+                  Call Us: (603) 942-7355﻿﻿
+               </h2>
+      </div>
+      <div id="navDivBox">
+         <div class="navBar">
+            <a href="home.html">Home</a>
+         </div>
+         <div class="navBar">
+            <a href="dockPack.html">Dock Packages and Pricing</a>
+         </div>
+         <div class="navBar">
+            <a href="sure-step.html">Sure-Step</a>
+         </div>
+         <div class="navBar">
+            <a href="dockParts.html">Dock Parts and Accessories</a>
+         </div>
+         <div class="navBar" onclick="onClick()" id="warranty">
+            Warranty
+         </div>
+         <div class="navBar">
+            <a href="testAndFeed.html">Testimonials and Feedback</a>
+         </div>
+         <div class="navBar">
+            <a href="contactUs.html" style="background-color: #111111">Contact Us</a>
+         </div>
+      </div>
+      </div>
+   </nav>
+    
+    <div id="mainContent">
+        <form>
+            <h1>Contact Us</h1>
+            <table>
+                <tr>
+                    <td class="spaceRight">
+                       <label for="fname">First Name:</label>
+                       <input type="text" name="fname" id="fname">  
+                    </td>
+                    <td class="spaceLeft">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="spaceRight">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email"> 
+                    </td>
+                    <td class="spaceLeft">
+                        <label for="phoneInput">Phone:</label>
+                        <input type="text" name="phone" id="phoneInput">
+                    </td>
+                </tr>
+                <tr>
+                     <td colspan=2 class="topic">
+                        <label for="topic">Topic:</label>
+                        <select name="topic" id="topic">
+                            <option value="Dock Packages">Dock Packages</option>
+                            <option value="Sure-Step">Sure-Step</option>
+                            <option value="Dock Parts">Dock Parts</option>
+                            <option value="Warranty">Warranty</option>
+                            <option value="Pricing">Pricing</option>
+                            <option value="Feedback">Feedback</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                     <td colspan=2>
+                        <label for="comments">Comments:</label>
+                        <br>
+                        <br>
+                        <textarea id="comments" name="comments" rows="20" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <div id="button">
+                            <input class="button1" type="submit" value="Submit">
+                            <input class="button2" type="reset" value="Reset">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

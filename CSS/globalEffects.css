@@ -1,0 +1,25 @@
+/*Anthony Gatti and Mike Foley*/
+/*Web Development Spring 2022*/
+/*File: globalEffects.css*/
+
+/*code from https://www.youtube.com/watch?v=IcekdG_bUTU*/
+.columns{
+  column-count: 2;
+  column-gap: 20px;
+  column-fill: balance;
+}
+
+img:hover{
+    animation-duration: 1s;
+    animation-name: zoom;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  from {
+  }
+
+  to {
+    transform: scale(1.25,1.25);
+  }
+}

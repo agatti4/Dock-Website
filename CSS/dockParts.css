@@ -1,0 +1,57 @@
+/*Anthony Gatti and Mike Foley*/
+/*Web Development Spring 2022*/
+/*File: dockParts.css*/
+
+:root {
+    --color1: #a1d2ce;
+    --color2: #78cad2;
+    --color3: #62a8ac;
+    --color4: #5497a7;
+    --color5: #50858b;
+}
+body {
+    max-width: 1392px;
+    min-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+    background: var(--color3);
+    font-family: "Arial", "Times New Roman", sans-serif;
+}
+
+div.item{
+  background-color: var(--color4);
+  border: solid 2px var(--color2);
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  width: 18%;
+  text-align: center;
+  border-radius: 10px;
+}
+div.itemName{
+  color: black;
+  font-weight: bold;
+}
+div.itemprice{
+  color: var(--color1);
+  font-weight: bold;
+}
+img{
+  max-width: 200px;
+  max-height: 200px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+div#mainContent {
+    margin-top: 67.5px;
+}
+div#imges{
+    display: block;
+    margin-left: 12.5%;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,94 @@
+:root {
+  --color1: #687864;
+  --color2: #31708e;
+  --color3: #5085a5;
+  --color4: #8fc1e3;
+  --color5: #f7f9fb;
+}
+body {
+    max-width: 1392px;
+    min-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+    background-color: var(--color3);
+    font-family: "Arial", "Times New Roman", sans-serif;
+}
+
+
+div#heading{
+    background-color: var(--color3);
+    text-align: center;
+    margin-top: 67.5px;
+}
+
+div#DockPacks{
+    margin: auto;
+    background-color: var(--color3);
+    width: 100%;
+    max-width: 1392px;
+    min-width: 800px;
+    
+}
+
+div#box {
+  margin-left: 3.75%;
+}
+
+div.DockItem{
+    background-color: var(--color4);
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    box-shadow: 10px 5px 5px #444;
+}
+div.DockItem table{
+    margin: auto;
+}
+
+
+img.dockInfo{
+    max-width: 300px;
+    max-height: 150px;
+}
+div.imageBox{
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+div.BottomText{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+div.BottomText table{
+    border-collapse: collapse;
+    margin: auto;
+}
+div.BottomText table td{
+    border: 1px solid black;
+}
+
+div#payment{
+    background-color: var(--color3);
+    margin:auto;
+    width: 1000px;
+}
+div#payment img{
+    float: right;
+    margin-right: 100px;
+    margin-top: -80px;
+}
+footer{
+  background-color: var(--color3);
+}
+footer table{
+  margin: auto;
+}

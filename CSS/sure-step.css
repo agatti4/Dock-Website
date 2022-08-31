@@ -1,0 +1,59 @@
+/*Anthony Gatti and Mike Foley*/
+/*Web Development Spring 2022*/
+/*File: sure-step.css*/
+
+:root {
+  --color1: #687864;
+  --color2: #31708e;
+  --color3: #5085a5;
+  --color4: #8fc1e3;
+  --color5: #f7f9fb;
+}
+body {
+    font-family: "Arial", "Times New Roman", sans-serif;
+}
+h1{
+  text-align: center;
+}
+img{
+    height: 150px;
+    max-width: 300px;
+    display: inline-block;
+    border: 3px solid var(--color2);
+}
+div.img {
+    display: block;
+    margin: auto;
+    
+}
+body {
+    max-width: 1392px;
+    min-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+    background: var(--color3);
+}
+div#mainContent{
+    margin:auto;
+    margin-top: 67.5px;
+}
+div#box{
+  margin-left: 8%;
+}
+div.product{
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  height: 520px;
+  background-color: var(--color4);
+  box-shadow: 10px 5px 5px #444;
+  text-align: center;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
