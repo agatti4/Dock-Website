@@ -7,4 +7,5 @@ How to use: Go to https://agatti4.github.io/Dock-Website/index.html
 Technologies: HTML/CSS/JS
 <br>
 Collaborators: Mike Foley
+DISCLAIMER: No responsive design
 
